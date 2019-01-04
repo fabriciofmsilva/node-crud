@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Show - Simple CRUD in NodeJS</title>
+  </head>
+  <body>
+    <h1>Registers</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Surname</td>
+          <td>Actions</td>
+        </tr>
+      </thead>
+      <tbody>
+        <% data.forEach(function(details) { %>
+          <tr>
+            <td><%= details.name %></td>
+            <td><%= details.surname %></td>
+            <td>
+              <a href="/edit/<%= details._id %>">Edit</a>
+              -
+              <a href="/delete/<%= details._id %>">Delete</a>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+
+    <a href="/">Back</a>
+  </body>
+</html>
