@@ -1,12 +1,46 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+
 const AppDAO = require('./dao');
 const ProjectRepository = require('./project.repository');
 const TaskRepository = require('./task.repository');
 
+const dao = new AppDAO('./database.sqlite3');
+const blogProjectData = { name: 'Write Node.js - SQLite Tutoriral' };
+const projectRepo = new ProjectRepository(dao);
+const taskRepo = new TaskRepository(dao);
+
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get('/', (req, res) => {
+  res.send('Works!\n');
+});
+
+app.get('/project/:id', (req, res) => {
+  projectRepo.getById(req.params.id)
+    .then((project) => {
+      res.json(project);
+    });
+});
+
+app.get('/project/:id/tasks', (req, res) => {
+  projectRepo.getById(req.params.id)
+    .then((project) => {
+      projectRepo.getTasks(project.id)
+        .then((tasks) => {
+          res.json(tasks);
+        });
+    });
+});
+
+function init() {
+  app.listen(3030, () => {
+    console.log('Server is running on port 3030');
+  });
+}
+
 function main() {
-  const dao = new AppDAO('./database.sqlite3');
-  const blogProjectData = { name: 'Write Node.js - SQLite Tutoriral' };
-  const projectRepo = new ProjectRepository(dao);
-  const taskRepo = new TaskRepository(dao);
   let projectId
 
   projectRepo.createTable()
@@ -50,10 +84,11 @@ function main() {
           console.log(`task description = ${task.description}`)
           console.log(`task isComplete = ${task.isComplete}`)
           console.log(`task projectId = ${task.projectId}`)
+          resolve('success')
         })
       })
-      resolve('success')
     })
+    .then(() => init())
     .catch((err) => {
       console.log('Error: ')
       console.log(JSON.stringify(err))
