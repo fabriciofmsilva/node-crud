@@ -59,13 +59,13 @@ Add additional notes about how to deploy this on a live system
 ## Built With
 
 * [Node.js](https://nodejs.org/) - The language (Elixir|Scala|Erlang|Clojure|Haskell|Java|.NET | Python|Ruby|PHP|Node.js(TypeScript) | Golang|Rust)
-* [Express](#) - The framework (Express(Node.js))
+* [Express](#) - The framework (Express(Node.js) | Spring(Java) | Django|Flask(Python) | Laravel(PHP) | Rails (Ruby))
 * [npm](https://www.npmjs.com/) - The package manager (Composer(PHP) | npm|yarn(Node.js) | pip(Python) | gems(Ruby))
 * [](#) - The lint for standards and best prectices (PHP-FIG|PSRs(PHP)) [OWASP guideline]
 * [](#) - The test framework (PHPUnit|PHPSpec|Codeception(PHP) | Mocha|Chai|Sinon|Mockery|Ava|Jasmine(Node.js))
 * [](#) - The coverage framework
 * [SQLite](https://www.sqlite.org/) - The relational database (MySQL|MariaDB|PostgreSQL|MSSQL|Oracle)
-* [](#) - The NoSQL database (MongoDB|RethinkDB|Cassandra|Couchbase)
+* [](#) - The NoSQL database (MongoDB|RethinkDB|Cassandra|Couchbase|Firebase|DynamoDB)
 * [](#) - The caching (Mencached|Redis)
 * [RESTFul]() - The RESTFul
 * [](#) - The auth (OAuth|Basic Authentication|Token Authenticataion|JWT|OpenID)
