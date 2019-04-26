@@ -58,30 +58,31 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Node.js](https://nodejs.org/) - The platform
-* [npm](https://www.npmjs.com/) - The package manager
-* [lint](#) - The lint for standards and best prectices
-* [test:unit](#) - The unit test framework
-* [test:integration](#) - The integration test framework
-* [coverage](#) - The coverage framework
-* [SQLite](https://www.sqlite.org/) - The database
-* [caching](#) - The caching (Mencached|Redis)
+* [Node.js](https://nodejs.org/) - The language (Elixir|Scala|Erlang|Clojure|Haskell|Java|.NET | Python|Ruby|PHP|Node.js(TypeScript) | Golang|Rust)
+* [Express](#) - The framework (Express(Node.js))
+* [npm](https://www.npmjs.com/) - The package manager (Composer(PHP) | npm|yarn(Node.js) | pip(Python) | gems(Ruby))
+* [](#) - The lint for standards and best prectices (PHP-FIG|PSRs(PHP)) [OWASP guideline]
+* [](#) - The test framework (PHPUnit|PHPSpec|Codeception(PHP) | Mocha|Chai|Sinon|Mockery|Ava|Jasmine(Node.js))
+* [](#) - The coverage framework
+* [SQLite](https://www.sqlite.org/) - The relational database (MySQL|MariaDB|PostgreSQL|MSSQL|Oracle)
+* [](#) - The NoSQL database (MongoDB|RethinkDB|Cassandra|Couchbase)
+* [](#) - The caching (Mencached|Redis)
 * [RESTFul]() - The RESTFul
-* [authentication](#) - The auth (OAuth|Basic Authentication|Token Authenticataion|JWT|OpenID)
-* [message-broker](#) - The message broker (RabbitMQ|Kafka)
-* [search-engine](#) - Search engine (ElasticSearch|Solr|Sphinx)
-* [web-server](#) - The web server (Apache|Nginx|Tomcat|Caddy|MS IIS)
-* [web sockets](#) - The web socket
-* [GraphQL]($) - The GraphQL
-* [Docker]() - The container (Docker|rkt|LXC)
-* [Configuration Management](#) - The configuration management (Ansible|Salt|Chef|Puppet)
-* [container orchestration](#) - The container orchestration (Kubernetes|Docker Swarm|Mesos|Nomad)
-* [infrastructure provisioning](#) - The infrastructure provisioning (Terraform|Cloud Formation)
-* [ci-cd](#) - The CI/CD tool (Jenkins|Travis CI|TeamCity|Drone|Circle CI)
-* [infrastructure monitoring](#) - The infrastructure monitoring (Nagios|Icinga|Datadog|Zabbix|Monit)
-* [application monitoring](#) - The application monitoring (AppDinamics|New Relic)
-* [log management](#) - The log management (ELK Stack|Graylog|Splung|Papertrail)
-* [cloud provider](#) - The cloud provider (AWS|Goodle Cloud|Azue|Digital Ocean|Heroku)
+* [](#) - The auth (OAuth|Basic Authentication|Token Authenticataion|JWT|OpenID)
+* [](#) - The message broker (RabbitMQ|Kafka)
+* [](#) - Search engine (ElasticSearch|Solr|Sphinx)
+* [](#) - The web server (Apache|Nginx|Tomcat|Caddy|MS IIS)
+* [](#) - The web socket
+* [](#) - The GraphQL
+* [](#) - The container (Docker|rkt|LXC)
+* [](#) - The configuration management (Ansible|Salt|Chef|Puppet)
+* [](#) - The container orchestration (Kubernetes|Docker Swarm|Mesos|Nomad)
+* [](#) - The infrastructure provisioning (Terraform|Cloud Formation)
+* [](#) - The CI/CD tool (Jenkins|Travis CI|TeamCity|Drone|Circle CI)
+* [](#) - The infrastructure monitoring (Nagios|Icinga|Datadog|Zabbix|Monit)
+* [](#) - The application monitoring (AppDinamics|New Relic)
+* [](#) - The log management (ELK Stack|Graylog|Splung|Papertrail)
+* [](#) - The cloud provider (AWS|Goodle Cloud|Azue|Digital Ocean|Heroku)
 
 ## Contributing
 
