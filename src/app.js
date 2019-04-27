@@ -5,9 +5,9 @@ const app = express();
 
 const winston = require('./config/winston');
 
-const AppDAO = require('./dao');
-const ProjectRepository = require('./project.repository');
-const TaskRepository = require('./task.repository');
+const AppDAO = require('./db/dao');
+const ProjectRepository = require('./db/project.repository');
+const TaskRepository = require('./db/task.repository');
 
 const dao = new AppDAO('./database.sqlite3');
 const blogProjectData = { name: 'Write Node.js - SQLite Tutoriral' };

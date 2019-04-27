@@ -64,8 +64,9 @@ Add additional notes about how to deploy this on a live system
 * [Express](https://expressjs.com/) - The framework (Express(Node.js) | Spring(Java) | Django|Flask(Python) | Laravel(PHP) | Rails (Ruby))
 * [npm](https://www.npmjs.com/) - The package manager (Composer(PHP) | npm|yarn(Node.js) | pip(Python) | gems(Ruby))
 * [ESLint](https://eslint.org/) - The lint for standards and best prectices [(PHP-FIG|PSRs(PHP))]|[ESlint|TSLint|Standard(Node.js)]|[OWASP guideline]
-* [](#) - The test framework (PHPUnit|PHPSpec|Codeception(PHP) | Mocha|Tape|Chai|Sinon|Mockery|Ava|Jasmine(Node.js))
-* [](#) - The coverage framework
+* [mocha](https://mochajs.org/) - The test framework (PHPUnit|PHPSpec|Codeception(PHP) | Mocha|Tape|Chai|Sinon|Mockery|Ava|Jasmine(Node.js))
+* [chai](https://www.chaijs.com/) - The assertion framework
+* [Istanbul](https://github.com/gotwarlost/istanbul) - The coverage framework
 * [SQLite](https://www.sqlite.org/) - The relational database (MySQL|MariaDB|PostgreSQL|MSSQL|Oracle)
 * [](#) - The NoSQL database (MongoDB|RethinkDB|Cassandra|Couchbase|Firebase|DynamoDB)
 * [](#) - The caching (Mencached|Redis)

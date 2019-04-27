@@ -1,14 +1,16 @@
 const sqlite3 = require('sqlite3');
 
+const winston = require('../config/winston');
+
 class AppDAO {
   constructor(dbFilePath = 'database.sqlite3') {
     this.db = new sqlite3.Database(dbFilePath, (err) => {
       if (err) {
-        console.log('Could not connect to database', err);
+        winston.error('Could not connect to database', err);
         return err;
       }
 
-      console.log('Connected to database');
+      winston.log('Connected to database');
     });
   }
 
@@ -16,8 +18,8 @@ class AppDAO {
     return new Promise((resolve, reject) => {
       this.db.run(sql, params, function(err) {
         if (err) {
-          console.log('Error running sql', sql);
-          console.log(err);
+          winston.error('Error running sql', sql);
+          winston.error(err);
           reject(err);
         }
 
@@ -30,8 +32,8 @@ class AppDAO {
     return new Promise((resolve, reject) => {
       this.db.get(sql, params, (err, result) => {
         if (err) {
-          console.log('Error running sql:', sql);
-          console.log(err);
+          winston.error('Error running sql:', sql);
+          winston.error(err);
           reject(err);
         }
 
@@ -44,8 +46,8 @@ class AppDAO {
     return new Promise((resolve, reject) => {
       this.db.all(sql, params, (err, rows) => {
         if (err) {
-          console.log('Error, running, sql:', sql);
-          console.log(err);
+          winston.error('Error, running, sql:', sql);
+          winston.error(err);
           reject(err);
         }
 
