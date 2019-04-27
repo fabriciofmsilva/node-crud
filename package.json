@@ -6,17 +6,20 @@
   "scripts": {
     "lint": "eslint src/*.js",
     "lint:fix": "eslint src/*.js --fix",
-    "start": "node app.js",
-    "start:watch": "nodemon app.js",
+    "start": "node src/app.js",
+    "start:watch": "nodemon src/app.js",
     "test": "npm run lint"
   },
   "author": "Fabrício Silva <fabriciofmsilva@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "app-root-path": "^2.2.1",
     "body-parser": "^1.19.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "sqlite3": "^4.0.6"
+    "morgan": "^1.9.1",
+    "sqlite3": "^4.0.6",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "eslint": "^5.16.0",

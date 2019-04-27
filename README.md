@@ -61,9 +61,9 @@ Add additional notes about how to deploy this on a live system
 ## Built With
 
 * [Node.js](https://nodejs.org/) - The language (Elixir|Scala|Erlang|Clojure|Haskell|Java|.NET | Python|Ruby|PHP|Node.js(TypeScript) | Golang|Rust)
-* [Express](#) - The framework (Express(Node.js) | Spring(Java) | Django|Flask(Python) | Laravel(PHP) | Rails (Ruby))
+* [Express](https://expressjs.com/) - The framework (Express(Node.js) | Spring(Java) | Django|Flask(Python) | Laravel(PHP) | Rails (Ruby))
 * [npm](https://www.npmjs.com/) - The package manager (Composer(PHP) | npm|yarn(Node.js) | pip(Python) | gems(Ruby))
-* [ESLint](#) - The lint for standards and best prectices [(PHP-FIG|PSRs(PHP))]|[ESlint|TSLint|Standard(Node.js)]|[OWASP guideline]
+* [ESLint](https://eslint.org/) - The lint for standards and best prectices [(PHP-FIG|PSRs(PHP))]|[ESlint|TSLint|Standard(Node.js)]|[OWASP guideline]
 * [](#) - The test framework (PHPUnit|PHPSpec|Codeception(PHP) | Mocha|Tape|Chai|Sinon|Mockery|Ava|Jasmine(Node.js))
 * [](#) - The coverage framework
 * [SQLite](https://www.sqlite.org/) - The relational database (MySQL|MariaDB|PostgreSQL|MSSQL|Oracle)
@@ -83,6 +83,8 @@ Add additional notes about how to deploy this on a live system
 * [](#) - The CI/CD tool (Jenkins|Travis CI|TeamCity|Drone|Circle CI)
 * [](#) - The infrastructure monitoring (Nagios|Icinga|Datadog|Zabbix|Monit)
 * [](#) - The application monitoring (AppDinamics|New Relic)
+* [morgan](https://github.com/expressjs/morgan) - The HTTP request logger middleware [loggly|bunyan|morgan|winston(Node.js)]
+* [winston](https://github.com/winstonjs/winston) - The logger tool [loggly|bunyan|morgan|winston(Node.js)]
 * [](#) - The log management (ELK Stack|Graylog|Splung|Papertrail)
 * [](#) - The cloud provider (AWS|Goodle Cloud|Azue|Digital Ocean|Heroku)
 
