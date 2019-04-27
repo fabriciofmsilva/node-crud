@@ -1,8 +1,8 @@
+[![Build Status](https://travis-ci.org/fabriciofmsilva/node-express-sqlite-simple-crud.svg?branch=master)](https://travis-ci.org/fabriciofmsilva/node-express-sqlite-simple-crud)
+
 # Simple CRUD with Node + Express + SQLite
 
 A simple CRUD created using Node.js, Express and SQLite
-
-[![Build Status](https://travis-ci.org/fabriciofmsilva/node-express-sqlite-simple-crud.svg?branch=master)](https://travis-ci.org/fabriciofmsilva/node-express-sqlite-simple-crud)
 
 ## Getting Started
 
