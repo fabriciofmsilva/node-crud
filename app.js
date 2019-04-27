@@ -2,9 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 
-const AppDAO = require('./dao');
-const ProjectRepository = require('./project.repository');
-const TaskRepository = require('./task.repository');
+const AppDAO = require('./src/dao');
+const ProjectRepository = require('./src/project.repository');
+const TaskRepository = require('./src/task.repository');
 
 const dao = new AppDAO('./database.sqlite3');
 const blogProjectData = { name: 'Write Node.js - SQLite Tutoriral' };

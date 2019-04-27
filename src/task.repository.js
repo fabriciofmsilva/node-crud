@@ -19,21 +19,21 @@ class TaskRepository {
 
   create({name, description, isComplete, projectId}) {
     return this.dao.run(
-      `INSERT INTO tasks (name, description, isComplete, projectId) VALUES (?, ?, ?, ?)`,
+      'INSERT INTO tasks (name, description, isComplete, projectId) VALUES (?, ?, ?, ?)',
       [name, description, isComplete, projectId]
     );
   }
 
   delete(id) {
     return this.dao.run(
-      `DELETE FROM projects WHERE id = ?`,
+      'DELETE FROM projects WHERE id = ?',
       [id]
     );
   }
 
   getById(id) {
     return this.dao.get(
-      `SELECT * FROM tasks WHERE id = ?`,
+      'SELECT * FROM tasks WHERE id = ?',
       [id]
     );
   }

@@ -4,9 +4,11 @@
   "description": "A Simple CRUD with NodeJS + Express + SQLite",
   "main": "app.js",
   "scripts": {
+    "lint": "eslint src/*.js",
+    "lint:fix": "eslint src/*.js --fix",
     "start": "node app.js",
     "start:watch": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint"
   },
   "author": "Fabrício Silva <fabriciofmsilva@gmail.com>",
   "license": "MIT",
@@ -17,6 +19,7 @@
     "sqlite3": "^4.0.6"
   },
   "devDependencies": {
+    "eslint": "^5.16.0",
     "nodemon": "^1.18.11"
   }
 }

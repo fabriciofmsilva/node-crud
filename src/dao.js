@@ -9,12 +9,12 @@ class AppDAO {
       }
 
       console.log('Connected to database');
-    })
+    });
   }
 
   run(sql, params = []) {
     return new Promise((resolve, reject) => {
-      this.db.run(sql, params, function (err, data) {
+      this.db.run(sql, params, function(err) {
         if (err) {
           console.log('Error running sql', sql);
           console.log(err);
@@ -44,7 +44,7 @@ class AppDAO {
     return new Promise((resolve, reject) => {
       this.db.all(sql, params, (err, rows) => {
         if (err) {
-          console.log('Error, running, sql:', sql)
+          console.log('Error, running, sql:', sql);
           console.log(err);
           reject(err);
         }
@@ -55,4 +55,4 @@ class AppDAO {
   }
 }
 
-module.exports = AppDAO
+module.exports = AppDAO;
