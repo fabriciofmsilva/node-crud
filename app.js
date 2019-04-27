@@ -11,6 +11,9 @@ const blogProjectData = { name: 'Write Node.js - SQLite Tutoriral' };
 const projectRepo = new ProjectRepository(dao);
 const taskRepo = new TaskRepository(dao);
 
+const PORT = 8080;
+const HOST = '0.0.0.0';
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
@@ -35,8 +38,8 @@ app.get('/project/:id/tasks', (req, res) => {
 });
 
 function init() {
-  app.listen(3030, () => {
-    console.log('Server is running on port 3030');
+  app.listen(PORT, HOST, () => {
+    console.log(`Server is running on http://${HOST}:${PORT}`);
   });
 }
 
